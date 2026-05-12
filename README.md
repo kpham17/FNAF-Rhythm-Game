@@ -3,7 +3,7 @@
 Repository for FNAF Ditch Day 2026 Rhythm Game.
 
 Containes a both the entire Gamemaker library and standalone(found in release) zip file that can be run.
-Run by downloading the zip file and running the executable. To change the hidden message and cheat code, pull the repository and change within the oMenu object. Cheat code is within the Create Event in variable 'hiddenCode'; hidden message is within the Create Event in variable 'hiddenMessage'.
+Run by downloading the zip file and running the executable. To change the hidden message and cheat code, pull the repository and change within the oMenu object. Cheat code is within the Create Event in variable `hiddenCode`; hidden message is within the Create Event in variable `hiddenMessage`.
 
 ## Main Menu Commands:
 Fullscreen: F
