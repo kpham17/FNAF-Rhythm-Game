@@ -43,11 +43,20 @@ draw_set_halign(fa_center);
 
 draw_set_font(Font2);
 var c_turquoise = make_color_rgb(16, 239, 194);
-if (combo == 0)                              draw_text_color(room_width/2, room_height/2, "MISSED", c_red, c_red, c_red, c_red, comboAlpha);
-if (combo <= 10 && combo != 0) draw_text_color(room_width/2, room_height/2, "OKAY: " + string(combo),       c_ltgray, c_ltgray, c_ltgray, c_ltgray, comboAlpha);
-if (combo >= 50)                           draw_text_color(room_width/2, room_height/2, "AMAZING:" + string(combo), c_fuchsia, c_turquoise, c_white, c_turquoise, comboAlpha);
-else if (combo >= 25)                   draw_text_color(room_width/2, room_height/2, "GREAT:" + string(combo), c_aqua, c_blue, c_aqua, c_blue, comboAlpha);
-else if (combo >  10)                       draw_text_color(room_width/2, room_height/2, "GOOD:" + string(combo),     c_lime, c_green, c_lime, c_green, comboAlpha);
+if (combo == 0)                draw_text_color(room_width/2, room_height/2, 
+	"MISSED", c_red, c_red, c_red, c_red, comboAlpha);
+if (combo <= 10 && combo != 0) draw_text_color(room_width/2, room_height/2, 
+	"OKAY: "   + string(floor(combo))+"x", 
+	c_ltgray, c_ltgray, c_ltgray, c_ltgray, comboAlpha);
+if (combo >= 50)               draw_text_color(room_width/2, room_height/2, 
+	"AMAZING:" + string(floor(combo))+"x", 
+		c_fuchsia, c_turquoise, c_white, c_turquoise, comboAlpha);
+else if (combo >= 25)          draw_text_color(room_width/2, room_height/2, 
+	"GREAT:"   + string(floor(combo))+"x", 
+	c_aqua, c_blue, c_aqua, c_blue, comboAlpha);
+else if (combo >  10)          draw_text_color(room_width/2, room_height/2, 
+	"GOOD:"    + string(floor(combo))+"x", 
+	c_lime, c_green, c_lime, c_green, comboAlpha);
 
 draw_text(room_width/5*1, 700, "[A]");
 draw_text(room_width/5*2, 700, "[S]");
