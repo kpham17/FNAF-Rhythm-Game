@@ -6,7 +6,7 @@ song_files = [Song_FNAF1, Song_ItsBeenSoLong, Song_DieInAFire, Song_IGotNoTIme, 
 songnames = ["FNAF", "It's Been So Long", "Die in a Fire", "I Got No Time", "I Can't Fix You", "Join Us For a Bite"];
 displaynames = ["@N*#", "|t's #@)) sO ^0@*", "#IE @# @ fI$3", "1 9O7 &@ 7@#(", "* (AN'# $#* y)(", "j*9# uS #@) 1 $*^@"];
 hiddenCode = "ASSKLL";
-
+hiddenMessage = "Hidden Message"'
 
 global.song_idx = 0;
 global.accuracy = 0;
