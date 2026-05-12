@@ -78,6 +78,7 @@ new_note = (curr_pos != pos);
 
 if (curr_pos >= lines){
 	dropSpeed = 0;
+	audio_pause_all()
 	room_goto(LevelEndRoom)
 	exit;
 	

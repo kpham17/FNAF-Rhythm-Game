@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_set_font(Font2);
-draw_text(450, 100, "FNAF");
+draw_text(450, 100, global.song_name);
 draw_text(450, 150, "Score : "+string(global.score));
 draw_text(450, 200, "Accuracy : "+string(global.accuracy) + "%");
 
