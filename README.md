@@ -15,3 +15,5 @@ In order for the parts of the cheat code to appear, need to clear the song with 
 While playing the song pressing R will restart the song. Pressing Esc will end the song and bring to the level end menu
 
 On the level end screen will show accuracy and score. Pressing R will restart the song, Pressing Esc returns to the main menu
+
+Beatmaps made using [AutoStepper](https://github.com/phr00t/AutoStepper).
