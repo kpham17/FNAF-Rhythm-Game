@@ -1,3 +1,15 @@
+
+var _vid_data = video_draw();
+var _vid_stat = _vid_data[0];
+
+var c_cgrey = make_color_rgb(200, 200, 200);
+
+if (_vid_stat == 0) { // 0 means the video is successfully playing
+    surf = _vid_data[1];
+	draw_surface_stretched_ext(surf, 0, 0, room_width, room_height, c_ltgrey, 0.8);
+}
+
+
 draw_set_color(c_white);
 draw_line_width(0, button_row, room_width, button_row, 5);
 
