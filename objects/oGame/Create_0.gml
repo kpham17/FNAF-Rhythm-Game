@@ -86,3 +86,10 @@ lines = j;
 //
 Music = audio_play_sound(global.song_file, 10, false);
 audio_master_gain(0.3);
+
+
+
+video_open(global.video_file);
+video_seek_to(global.voff); 
+video_set_volume(0);
+ 

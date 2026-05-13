@@ -16,18 +16,22 @@ if (code_enter = false){
 	if (keyboard_check_pressed(ord("A"))){
 		global.song_idx = (global.song_idx+6-1) % 6;
 		global.song_file = song_files[global.song_idx];
-		global.beatmap_file = beatmap_files[global.song_idx];
+		global.beatmap_file = files_name[global.song_idx]+".sm";
+		global.video_file = files_name[global.song_idx]+".mp4";
 		global.song_name = songnames[global.song_idx];
 		global.hidden = string_char_at(hiddenCode, global.song_idx);
+		global.voff = video_offsets[global.song_idx];
 		
 		return;
 	}
 	if (keyboard_check_pressed(ord("S"))){
 		global.song_idx = (global.song_idx+1) % 6;
 		global.song_file = song_files[global.song_idx];
-		global.beatmap_file = beatmap_files[global.song_idx];
+		global.beatmap_file = files_name[global.song_idx]+".sm";
+		global.video_file = files_name[global.song_idx]+".mp4";
 		global.song_name = songnames[global.song_idx];
 		global.hidden = string_char_at(hiddenCode, global.song_idx);
+		global.voff = video_offsets[global.song_idx];
 
 		return;
 	}

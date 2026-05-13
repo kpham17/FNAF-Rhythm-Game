@@ -14,7 +14,7 @@ draw_text_color(room_width/6, 450, "Hidden Code [R]",
 	color2, color2, color2, color2, alpha2);
 draw_text_color(room_width/6, 500, string_copy(keystr, 13 - clen*2, 11),
 	color2, color2, color2, color2, alpha2);
-if (display_location) draw_text(room_width/6, 600, "Location TBD"); 
+if (display_location) draw_text(room_width/6, 600, hiddenMessage); 
 
 
 
