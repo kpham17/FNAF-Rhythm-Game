@@ -43,7 +43,7 @@ draw_text(20, 10, title);
 draw_text(20, 30, artist);
 draw_text(20, 50, "Progress: " + string(timing) + " s, " + string((pos/lines)*100) + "%" );
 draw_text(20, 70, "Score : "+  string(score) +" / " + string(maxscore));
-draw_text(20, 0, "Accuracy : "+string(score/maxscore * 100) + "%");
+draw_text(20, 90, "Accuracy : "+string(score/maxscore * 100) + "%");
 
 draw_set_halign(fa_right);
 draw_text(1340, 10, "Reset: [R]");
